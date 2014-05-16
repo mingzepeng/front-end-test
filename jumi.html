@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Mobile Cookbook</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no,target-densitydpi=medium-dpi" />
+
+    <link rel="stylesheet" type="text/css" href="bower_components/JMUI/css/mui-base.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/JMUI/css/mui-slide.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/JMUI/css/mui-swipechange.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/JMUI/css/mui-toolbar.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/JMUI/css/mui-button.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/JMUI/css/mui-checkbox.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/JMUI/css/mui-input.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/JMUI/css/mui-radio.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/JMUI/css/mui-list.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/JMUI/css/mui-dialog.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/JMUI/css/mui-slider.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/JMUI/css/mui-toggleswitch.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/JMUI/css/mui-progress.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/JMUI/css/mui-select.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/JMUI/css/mui-imageswitch.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/JMUI/css/mui-toolbar.css" />
+
+    <style type="text/css">
+        body > .toolbar_header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        body > .toolbar_header .home {
+            position: absolute;
+            top: 5px;
+            left: 10px;
+            width: auto;
+        }
+        body > .toolbar_header .home .btn_text {
+            padding: 3px 10px 3px 10px;
+        }
+        body > .toolbar_footer {
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .main {
+            margin-top: 45px;
+        }
+        #list1 li:first-child {
+            border-radius: 0;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!--
+    <div class="toolbar_header header_blue">
+        <h1>JX MUI</h1>
+        <button id="home" class="home btn btn_blue">
+            <span class="btn_text">主页</span>
+        </button>
+    </div>
+-->
+    <div class="toolbar_header header_blue">
+        <h1>header11</h1>
+    </div>
+    <div class="main">
+        <ul id="list1" class="list list_white conner_round_vertical_group">
+            <li class="list_item">
+                <a class="list_text">ListItemA</a>
+            </li>
+            <li class="list_item">
+                <a class="list_text">ListItemB</a>
+            </li>
+            <li class="list_item">
+                <a class="list_text">ListItemC</a>
+            </li>
+            <li class="list_item">
+                <a class="list_text">ListItemC</a>
+            </li>
+            <li class="list_item">
+                <a class="list_text">ListItemC</a>
+            </li>
+            <li class="list_item">
+                <a class="list_text">ListItemC</a>
+            </li>
+            <li class="list_item">
+                <a class="list_text">ListItemC</a>
+            </li>
+            <li class="list_item">
+                <a class="list_text">ListItemC</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
+	<script type="text/javascript" src="bower_components/JMUI/js/JM.js"></script>
+	<script type="text/javascript" src="bower_components/JMUI/js/slide.js"></script>
+	<script type="text/javascript" src="bower_components/JMUI/js/swipechange.js"></script>
+	<script type="text/javascript" src="bower_components/JMUI/js/button.js"></script>
+	<script type="text/javascript" src="bower_components/JMUI/js/buttonlist.js"></script>
+	<script type="text/javascript" src="bower_components/JMUI/js/checkbox.js"></script>
+	<script type="text/javascript" src="bower_components/JMUI/js/checkboxlist.js"></script>
+	<script type="text/javascript" src="bower_components/JMUI/js/autogrow_textarea.js"></script>
+	<script type="text/javascript" src="bower_components/JMUI/js/radio.js"></script>
+	<script type="text/javascript" src="bower_components/JMUI/js/radiolist.js"></script>
+	<script type="text/javascript" src="bower_components/JMUI/js/list.js"></script>
+	<script type="text/javascript" src="bower_components/JMUI/js/grouplist.js"></script>
+	<script type="text/javascript" src="bower_components/JMUI/js/dialog.js"></script>
+	<script type="text/javascript" src="bower_components/JMUI/js/slider.js"></script>
+	<script type="text/javascript" src="bower_components/JMUI/js/toggleswitch.js"></script>
+	<script type="text/javascript" src="bower_components/JMUI/js/progress.js"></script>
+	<script type="text/javascript" src="bower_components/JMUI/js/select.js"></script>
+	<script type="text/javascript" src="bower_components/JMUI/js/imagechange.js"></script>
+<script>
+	var $D = JM.dom,$E = JM.event;
+    var mainlist = MUI.List({
+		id:"list1"
+	});
+    var mainlist1 = $D.id('list1');
+    $E.on(document.getElementById('list1'),'click',function(e){
+        console.log(e)
+    })
+ 
+    
+</script>

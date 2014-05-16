@@ -1,0 +1,14 @@
+{
+  "name": "JMUI",
+  "homepage": "https://github.com/AlloyTeam/JMUI",
+  "_release": "f341a8fac8",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "f341a8fac8eb91ea552f672bcddeb588289432d2"
+  },
+  "_source": "https://github.com/AlloyTeam/JMUI.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/AlloyTeam/JMUI.git",
+  "_direct": true
+}
