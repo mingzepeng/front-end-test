@@ -1,0 +1,31 @@
+{
+  "name": "html5-t",
+  "version": "0.0.0",
+  "description": "test",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "connect-livereload": "^0.4.0",
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test command"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mingzepeng/front-end-test.git"
+  },
+  "keywords": [
+    "front-end-test"
+  ],
+  "author": "mingzepeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mingzepeng/front-end-test/issues"
+  },
+  "homepage": "https://github.com/mingzepeng/front-end-test"
+}
